@@ -7,6 +7,9 @@ source ${ABSDIR}/profile.sh
 REPOSITORY=/home/ec2-user/app/step3
 PROJECT_NAME=springboot-webservice
 
+echo "> $REPOSITORY 디렉터리로 이동"
+cd $REPOSITORY
+
 echo "> Build 파일 복사"
 echo "> cp $REPOSITORY/zip/*.war $REPOSITORY/"
 cp $REPOSITORY/zip/*.war $REPOSITORY/
